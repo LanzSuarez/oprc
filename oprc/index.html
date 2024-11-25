@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side -->
+        <div class="left-side"></div>
+
+        <!-- Right Side -->
+        <div class="right-side">
+            <div class="login-container">
+                <form id="login">
+                    <!-- Header with Logo -->
+                    <header>
+                        <img src="../Img/Logo.png" alt="logo">
+                    </header>
+
+                    <!-- User ID Input -->
+                    <div class="input-group">
+                        <label for="userid">User ID</label>
+                        <input type="text" id="userid" name="userid" required maxlength="7">
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <!-- Options -->
+                    <div class="options">
+                        <label>
+                            <input type="checkbox" name="remember" checked>
+                            Remember Me
+                        </label>
+                        <a href="#">Forgot Password</a>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="divider">OR</div>
+
+                    <!-- UB Mail Login -->
+                    <button type="button" class="btn icon-btn">
+                        <img src="./Img/email icon.png" alt="UB Mail Icon">
+                        Log In Using UB Mail
+                    </button>
+
+                    <!-- Log In Button -->
+                    <button type="button" class="btn" onclick="window.location.href='./home.html';">Log In</button>
+
+                    <!-- Admin Login -->
+                    <p><a href="#">Admin Click Here</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

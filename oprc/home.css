@@ -1,0 +1,263 @@
+/* General body styles */
+html {
+    height: 100%; /* Full height for the page */
+    margin: 0; /* Remove default margin */
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
+    url(Img/background-img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;  /* Prevent scrollbars */
+}
+
+/* Header container */
+header {
+    width: 100%;
+    background-color: #6a071a;
+}
+
+/* First row - logo and search bar */
+.header-row {
+    display: flex;
+    justify-content: center; /* Centering the contents */
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    top: 14px;
+    margin-bottom: -19px
+}
+
+.header-row .logo {
+    position: absolute;
+    left: 10px; /* Position the logo to the left */
+    width: 250px;
+}
+
+.header-row .logo img {
+    width: 350px;
+    height: auto;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: -6px;
+    padding-bottom: 10px;
+}
+
+.search-bar input {
+    padding: 15px 20px;
+    padding-right: 30px; /* Space for the icon */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 350px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px; /* Position the icon inside the input field on the right */
+    font-size: 18px;
+    color: #aaa;
+}
+
+/* Second row - navigation bar */
+.nav-bar {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #6a071a;  /* Current background color */
+    position: relative;
+    z-index: 20;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: 50%;
+}
+
+.nav-bar li {
+    margin: 0 15px; /* Add spacing between each link */
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 0;
+    padding: 10px; /* Add padding for larger clickable areas */
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+/* Main container using Flexbox */
+.main-container {
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 280px; /* Set fixed width for sidebar */
+    height: 100%; /* Make the sidebar take up the full height */
+    background-color: #e6e6e6;
+    color: rgb(7, 0, 0);
+    padding: 20px;
+    position: fixed; /* Fix the sidebar in place */
+}
+
+.sidebar-header h2 {
+  margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffbb00;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.sidebar-header img {
+    width: 10%;
+    height: auto;
+    margin-right: 5px;
+    margin-bottom: -4.5px;
+}
+
+.sidebar-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+.sidebar-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.sidebar-links a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.sidebar-links .icon {
+    margin-right: 10px;
+}
+
+.main-content {
+    margin-top: -0;
+    border-radius: 20px;
+    overflow-y: auto; 
+    justify-content: center;
+    margin-left: 36%;
+  }
+  
+  /* Dashboard Overview */
+  .dashboard-overview {
+    background-color: #ffbb00;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    
+    
+  }
+  
+  /* Profile Section */
+  .profile-welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+  }
+  
+  .profile-welcome .welcome-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-welcome .welcome-left i {
+    font-size: 40px;
+    margin-right: 15px;
+  }
+  
+  .profile-welcome .welcome-left p{
+    font-size: 20px;
+  }
+  
+  .profile-welcome .welcome-right img {
+    width: 100px;
+    height: 70px;
+    border-radius: 20%;
+  }
+  
+  /* Parking Overview */
+  .parking-overview .row {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .parking-overview .col {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .parking-overview i {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #e6e6e6;
+  }
+  /* First Row: Image Previews */
+  .parking-overview .parking-image {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+  }
+  
+  /* Second Row: Buttons */
+  .parking-overview .btn {
+    padding: 10px 20px;
+  background-color: #6a071a;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  }
+  
+  .parking-overview .btn:hover {
+    background-color: rgba(195, 10, 0, 0.863);
+  }
+  
+  /* Third Row: Text */
+  .parking-overview .col p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+  }
+
+  footer {
+    position: absolute;
+    bottom: -10px; /* Space from the bottom */
+    right: 30px;  /* Space from the right */
+    text-align: right;
+}
+
+/* Optional: Styling the image inside the footer */
+footer img {
+    width: 130px; /* Adjust the size as needed */
+    height: auto;
+}

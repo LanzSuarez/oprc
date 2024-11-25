@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Vehicle Entry/Exit Management</title>
+    <link rel="stylesheet" href="automated.css">
+</head>
+<body>
+    <header>
+        <!-- First row with logo and search bar -->
+        <div class="header-row">
+            <div class="logo">
+                <a href="home.html"><img src="Img/Logo.png" alt="logo"></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <span class="search-icon">&#128269;</span> <!-- Magnifying Glass Icon -->
+            </div>
+        </div>
+
+        <!-- Second row with navigation links -->
+        <div class="nav-bar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2><img src="img/menu_icon.png" alt="icon"></h2>
+            </div>
+            <ul class="sidebar-links">
+                <li><a href="dashboard.html" ><span class="icon"><img src="Img/dashboard_icon.png" style="width: 50px;" alt="icon"/></span></a></li>
+                <li><a href="enhanced.html"><span class="icon"><img src="Img/enhanced_icon.png" style="width: 50px;" alt="icon"/></span></a></li>
+                <li><a href="automated.html" class="active"><span class="icon"><img src="Img/automated_icon.png" style="width: 50px;" alt="icon"/></span></a></li>
+                <li><a href="settings.html"><span class="icon"><img src="Img/settings_icon.png" style="width: 50px;" alt="icon"/></span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main content area (two columns) -->
+        <div class="content-area">
+            <div class="left-column">
+                <h1>Vehicle sticker management</h1>
+                <div class="notification-item">
+                    <span class="notification-time">1 hour ago</span>
+                    <p class="notification-text">Your subscription has been successfully renewed.</p>
+                </div>
+                <div class="notification-item">
+                    <span class="notification-time">Yesterday</span>
+                    <p class="notification-text">New message from John Doe.</p>
+                </div>
+                <div class="notification-item">
+                    <span class="notification-time">2 days ago</span>
+                    <p class="notification-text">System update completed successfully.</p>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <h2>Real-time monitoring</h2>
+                <div class="activity-item">
+                    <span class="activity-time">5 minutes ago</span>
+                    <p class="activity-text">Logged into the dashboard.</p>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">30 minutes ago</span>
+                    <p class="activity-text">Updated account settings.</p>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-time">1 hour ago</span>
+                    <p class="activity-text">Uploaded a new file to the server.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img src="Img/Logo.png" alt="footer">
+    </footer>
+</body>
+</html>

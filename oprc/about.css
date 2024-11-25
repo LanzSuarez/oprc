@@ -1,0 +1,143 @@
+/* General body styles */
+html {
+    height: 100%; /* Full height for the page */
+    margin: 0; /* Remove default margin */
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
+    url(Img/background-img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;  /* Prevent scrollbars */
+}
+
+/* Header container */
+header {
+    width: 100%;
+    background-color: #6a071a;
+}
+
+/* First row - logo and search bar */
+.header-row {
+    display: flex;
+    justify-content: center; /* Centering the contents */
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    top: 14px;
+    margin-bottom: -19px
+}
+
+.header-row .logo {
+    position: absolute;
+    left: 10px; /* Position the logo to the left */
+    width: 250px;
+}
+
+.header-row .logo img {
+    width: 350px;
+    height: auto;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: -6px;
+    padding-bottom: 10px;
+}
+
+.search-bar input {
+    padding: 15px 20px;
+    padding-right: 30px; /* Space for the icon */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 350px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px; /* Position the icon inside the input field on the right */
+    font-size: 18px;
+    color: #aaa;
+}
+
+/* Second row - navigation bar */
+.nav-bar {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #6a071a;  /* Current background color */
+    position: relative;
+    z-index: 20;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: 50%;
+}
+
+.nav-bar li {
+    margin: 0 15px; /* Add spacing between each link */
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 0;
+    padding: 10px; /* Add padding for larger clickable areas */
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+.main-image {
+    display: flex;
+    justify-content: center; /* Center the image */
+    border: 12px solid #ffb330;
+}
+  
+  .main-image img {
+    width: 100%; /* Make image responsive */
+    height: 300px; /* Maintain aspect ratio */
+    border-radius: 5px; 
+  }
+.text {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 30px;
+    padding: 10vh;
+}
+
+.text h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.text p {
+    font-size: 15px;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: -10px; /* Space from the bottom */
+    right: 30px;  /* Space from the right */
+    text-align: right;
+}
+
+/* Optional: Styling the image inside the footer */
+footer img {
+    width: 130px; /* Adjust the size as needed */
+    height: auto;
+}

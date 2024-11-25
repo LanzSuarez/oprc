@@ -1,0 +1,292 @@
+html {
+  height: 100%; /* Full height for the page */
+  margin: 0; /* Remove default margin */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Header container */
+header {
+  width: 100%;
+  background-color: #6a071a;
+}
+
+/* First row - logo and search bar */
+.header-row {
+  display: flex;
+  justify-content: center; /* Centering the contents */
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  top: 14px;
+  margin-bottom: -19px;
+}
+
+.header-row .logo {
+  position: absolute;
+  left: 10px; /* Position the logo to the left */
+  width: 250px;
+}
+
+.header-row .logo img {
+  width: 350px;
+  height: auto;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  left: -6px;
+  padding-bottom: 10px;
+}
+
+.search-bar input {
+  padding: 15px 20px;
+  padding-right: 30px; /* Space for the icon */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 350px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px; /* Position the icon inside the input field on the right */
+  font-size: 18px;
+  color: #aaa;
+}
+
+/* Second row - navigation bar */
+.nav-bar {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #6a071a; /* Current background color */
+  position: relative;
+  z-index: 20;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-left: 50%;
+}
+
+.nav-bar li {
+  margin: 0 15px; /* Add spacing between each link */
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-right: 0;
+  padding: 10px; /* Add padding for larger clickable areas */
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+}
+
+/* Main container using Flexbox */
+.main-container {
+  display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 120px; /* Set fixed width for sidebar */
+  height: 100%; /* Make the sidebar take up the full height */
+  background-color: #e6e6e6;
+  color: rgb(7, 0, 0);
+  padding: 20px;
+  position: fixed; /* Fix the sidebar in place */
+}
+
+.sidebar-header h2 {
+  margin-top: -20px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.sidebar-header img {
+  width: 40%;
+  height: auto;
+  margin-right: 5px;
+  margin-bottom: -40px;
+}
+
+.sidebar-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-links li {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.sidebar-links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.sidebar-links .active {
+  background-color: #ffbb00;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar-links a:hover {
+  background-color: #847d7d;
+  border-radius: 4px;
+}
+
+/* Two-column layout inside main container */
+.content-area {
+  display: flex;
+  margin: 10px 60px 0px 175px;
+  padding: 20px;
+  width: 60%; /* Ensure full width of content area */
+  background-color: #6a071a;
+  border-radius: 5px;
+}
+
+.tab-column {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.left-column {
+  width: 25%; /* Adjust left column width */
+  padding: 20px;
+  border-right: 1px solid #ddd; /* Optional: add a divider between columns */
+  background-color: #6a071a;
+}
+
+.info {
+    justify-content: center;
+    text-align: center;
+}
+
+.settings-nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.settings-nav li {
+  margin: 15px 0;
+}
+
+/* Style for the four-column layout */
+.four-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px; /* Space between buttons */
+  width: 80%;
+  height: 20px;
+}
+
+.background {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url(Img/background1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.profile {
+  display: flex;
+  flex-direction: column; /* Stack image and text */
+  align-items: center; /* Center horizontally */
+  text-align: center;
+  margin: 20px;
+}
+
+.profile img {
+  border: 2px solid #000000; /* Add a border if needed */
+  border-radius: 50%; /* Make it a circle */
+  width: 170px; /* Adjust size of the image */
+  height: 170px; /* Ensure it stays proportional */
+  object-fit: cover; /* Prevent distortion */
+}
+
+.four-column .button {
+  flex: 1; /* Each button takes equal space */
+  text-align: center;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 15px 10px; /* Padding inside the button */
+  text-decoration: none; /* Remove underline from links */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Button text size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+/* Button hover effect */
+.four-column .button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.settings-nav a {
+  text-decoration: none;
+  color: black; /* Match header color */
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.settings-nav a:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.right-column {
+  width: 60%; /* Adjust right column width */
+  padding: 20px;
+  background-color: #e9dfdf;
+}
+
+.settings-content {
+  display: none; /* Default state for all content sections */
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: -10px; /* Space from the bottom */
+  right: 30px; /* Space from the right */
+  text-align: right;
+}
+
+/* Optional: Styling the image inside the footer */
+footer img {
+  width: 130px; /* Adjust the size as needed */
+  height: auto;
+}

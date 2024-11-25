@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- First row with logo and search bar -->
+        <div class="header-row">
+            <div class="logo">
+                <a href="home.html"><img src="Img/Logo.png" alt="logo"></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <span class="search-icon">&#128269;</span> <!-- Magnifying Glass Icon -->
+            </div>
+        </div>
+
+        <!-- Second row with navigation links -->
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="main-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2><img src="img/menu_icon.png" alt="icon">Main Menu</h2>
+            </div>
+            <ul class="sidebar-links">
+                <li><a href="dashboard.html"><span class="icon"><img src="Img/dashboard_icon.png" style="width: 35px;" alt="icon"/></span> Dashboard Overview</a></li>
+                <li><a href="enhanced.html"><span class="icon"><img src="Img/enhanced_icon.png" style="width: 35px;" alt="icon"/></span> Enhanced Security Measure</a></li>
+                <li><a href="automated.html"><span class="icon"><img src="Img/automated_icon.png" style="width: 35px;" alt="icon"/></span> Automated Vehicle Entry/Exit Management</a></li>
+                <li><a href="settings.html"><span class="icon"><img src="Img/settings_icon.png" style="width: 35px;" alt="icon"/></span> Settings</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <div class="dashboard-overview">
+              <div class="profile-welcome">
+                <div class="welcome-left">
+                  <i class="fas fa-user-circle"></i> 
+                  <p>WELCOME BACK! <strong>['username']</strong></p><!--Joe Doe changes when different user access it-->
+                </div>
+                <div class="welcome-right">
+                  <img src="Img/ticket.png" alt="ticket"> <!--image on right side-->
+                </div> <!--img will be change if user use the ticket-->
+              </div>
+    
+              <div class="parking-overview">
+                <!-- First Row: Image Previews -->
+                <div class="row">
+                  <div class="col">
+                    <img src="Img/Park_img.png" alt="Parking A" class="parking-image">
+                  </div>
+                  <div class="col">
+                    <img src="Img/Park_img.png" alt="Parking B" class="parking-image">
+                  </div>
+                  <div class="col">
+                    <img src="/Img/Park_img.png" alt="Parking C" class="parking-image">
+                  </div>
+                </div>
+    
+                <!-- Second Row: Buttons (PARKING A, B, C) -->
+                <div class="row">
+                  <div class="col">
+                    <a href="parking_a.html"><button class="btn">PARKING A</button></a>
+                  </div>
+                  <div class="col">
+                    <a href="parking_b.html"><button class="btn">PARKING B</button></a>
+                  </div>
+                  <div class="col">
+                    <a href="parking_c.html"><button class="btn">PARKING B</button></a>
+                  </div>
+                </div>
+    
+                <!-- Third Row: Text (Availability) -->
+                <div class="row">
+                  <div class="col">
+                    <p><i class="fas fa-car"></i> Inside: 15</p> <!--total(depends) of parking spot in parking-->
+                    <p>Availability: 7</p> <!--changes when others use the parking--> 
+                  </div>
+                  <div class="col">
+                    <p><i class="fas fa-car"></i> Inside: 15</p> <!--total(depends) of parking spot in parking-->
+                    <p>Availability: 7</p> <!--changes when others use the parking--> 
+                  </div>
+                  <div class="col">
+                    <p><i class="fas fa-car"></i> Inside: 15</p> <!--total(depends) of parking spot in parking-->
+                    <p>Availability: 7</p> <!--changes when others use the parking--> 
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+    </main>
+    <footer>
+        <img src="Img/Logo.png" alt="footer">
+      </footer>
+</body>
+</html>
+
+
